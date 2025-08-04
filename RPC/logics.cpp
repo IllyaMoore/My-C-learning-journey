@@ -1,11 +1,15 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 #include "header.h"
+
 using namespace std;
 
 
 void turn(int choice) {
-  int rand_num = rand() % 4;
+  srand(time(0));
+  int rand_num = rand() % 4 + 1;
+  cout << rand_num << endl;
   if (rand_num == 1 & choice == 2) {
     cout << "you win rand picked rock" << endl;
   } if (rand_num == 2 & choice == 1) {
