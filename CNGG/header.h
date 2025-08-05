@@ -10,11 +10,13 @@ class Input{
 };
 
 class Game{
+  int guess{};
   int x{};
   int rand_num{};
   public:
   int bett();
-  int timeToJam(int x);
+  int gen_num();
+  int player_guess(int sec_num, int trys);
 };
 
 #endif
