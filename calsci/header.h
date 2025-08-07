@@ -2,9 +2,9 @@
 #define INPUT
 
 class Input{
-  char usr_input{};
+  int usr_input{};
   public:
-  char get_usr_input();
+  void get_usr_input();
 };
 
 

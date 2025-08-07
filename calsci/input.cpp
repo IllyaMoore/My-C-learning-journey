@@ -2,6 +2,7 @@
 #include "header.h"
 using namespace std;
 
-char Input::get_usr_input(){
-  cin >> usr_input << endl;
-}
+void Input::get_usr_input(){
+  cin >> usr_input;
+  cout << usr_input << endl;
+}     
